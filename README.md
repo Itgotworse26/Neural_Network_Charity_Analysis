@@ -29,7 +29,7 @@ Alphabet Soup is requesting a binary classifier that uses machine learning that 
 
 ### Data Preprocessing
 * The target is the IS_SUCCESSFUL field.
-* The features are every other field except the IS_SUCCESSFUL EIN, and NAME fields.  
+* The features are every other field except the IS_SUCCESSFUL, EIN, and NAME fields.  
 * The variables that should be removed are the EIN and NAME fields.
 
 ### Compiling, Training, and Evaluating the Model
@@ -39,9 +39,9 @@ Alphabet Soup is requesting a binary classifier that uses machine learning that 
 * *  2 layers
 * *  sigmoid and sigmoid activation function for hidden layers, and relu activation function for the output layer.
 
-![Attempt 1 Summary]()
+![Attempt 1 Summary](https://github.com/Itgotworse26/Neural_Network_Charity_Analysis/blob/main/Resources/Attemp1_Summary.JPG)
 
-![Attempt 1 Results]()
+![Attempt 1 Results](https://github.com/Itgotworse26/Neural_Network_Charity_Analysis/blob/main/Resources/Attemp1_Results.JPG)
 
 
 * 2nd Attempt (Adding more neurons to the hidden layers): 
@@ -50,9 +50,9 @@ Alphabet Soup is requesting a binary classifier that uses machine learning that 
 * *  2 layers
 * *  relu and relu activation function for hidden layers, and sigmoid activation function for the output layer.
 
-![Attempt 2 Summary]()
+![Attempt 2 Summary](https://github.com/Itgotworse26/Neural_Network_Charity_Analysis/blob/main/Resources/Attemp2_Summary.JPG)
 
-![Attempt 2 Results]()
+![Attempt 2 Results](https://github.com/Itgotworse26/Neural_Network_Charity_Analysis/blob/main/Resources/Attemp2_Results.JPG)
 
 
 * 3rd Attempt (Adding additional hidden layers): 
@@ -61,9 +61,9 @@ Alphabet Soup is requesting a binary classifier that uses machine learning that 
 * *  3 layers
 * *  relu, relu, and relu activation function for hidden layers, and sigmoid activation function for the output layer.
 
-![Attempt 3 Summary]()
+![Attempt 3 Summary](https://github.com/Itgotworse26/Neural_Network_Charity_Analysis/blob/main/Resources/Attemp3_Summary.JPG)
 
-![Attempt 4 Results]()
+![Attempt 3 Results](https://github.com/Itgotworse26/Neural_Network_Charity_Analysis/blob/main/Resources/Attemp3_Results.JPG)
 
 
 * The samples provided by the client indicated they wanted two hidden layers with 80 and 30 neurons respectively. After that baseline was complete, I chose to use the number of neurons, layers, and activation functions above in my optimizations because I wanted to scale my neurons up and down from the baseline the client requested. 
@@ -72,3 +72,8 @@ Alphabet Soup is requesting a binary classifier that uses machine learning that 
 
 
 ## Summary
+Despite the tweaks to the baseline, none of them achieved the hoped for 75% model accuracy benchmark. Despite switching up the activation functions, adding more neurons, and adding more additional layers, all of the results were stuck at 72% model accuracy. 
+
+If I were to try to tweak the model even more, I would try to see if mixing the different optimizations would work. However, as seen above, simply changing the the activation functions, adding more neurons, or adding more hidden layers have not really affected the model accuracy by a lot. 
+
+Given more time and resources, I would probably try to see if the different learning models used in the Credit_Risk_Analysis analysis might provide more accurate results. However, even if adapting the learning models to work with the dataset provided by the client is not difficult, it would not fit the specifications for the binary classifier requested by the client. 
